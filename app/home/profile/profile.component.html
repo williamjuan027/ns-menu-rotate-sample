@@ -1,0 +1,22 @@
+<StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <StackLayout>
+                <Label height="140" width="140" borderRadius="70" class="skeleton-light"
+                    margin="20 10" horizontalAlignment="center"></Label>
+                <GridLayout columns="*, *, *" padding="0 10 10 10">
+                    <StackLayout *ngFor="let item of [1,2,3]; let i = index;" padding="0 5"
+                        [col]="i">
+                        <Label height="50" width="100%" class="skeleton-light" borderRadius="5"></Label>
+                    </StackLayout>
+                </GridLayout>
+                <StackLayout padding="0 10 10 10">
+                    <Label *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]" height="100"
+                        width="100%" borderRadius="5" class="skeleton-light"
+                        marginTop="10" horizontalAlignment="left"></Label>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</StackLayout>

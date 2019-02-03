@@ -1,0 +1,15 @@
+.actionbar-title {
+    color: #fff;
+    font-size: 20;
+    font-weight: normal;
+}
+
+.menu-item {
+    color: #fff;
+    font-size: 22;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 0.1;
+    padding: 30;
+}

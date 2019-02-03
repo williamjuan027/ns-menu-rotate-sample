@@ -1,0 +1,22 @@
+<StackLayout>
+    <Label height="120" margin="5 0 0 0" width="100%" class="skeleton-light"></Label>
+    <Label height="120" margin="5 0" width="100%" class="skeleton-light"></Label>
+    <ListView class="list-group" [items]="[1,2,3,4,5,6]" style="height:100%">
+        <ng-template let-current="item">
+            <FlexboxLayout flexDirection="row">
+                <GridLayout rows="*, 2*" columns="100, *, 10" class="skeleton-light"
+                    height="80" padding="10 0">
+                    <StackLayout row="0" rowSpan="2" col="0" class="skeleton-dark"
+                        height="60" width="60" verticalAlignment="center"
+                        horizontalAlignment="center" borderRadius="10"></StackLayout>
+                    <StackLayout row="0" col="1" class="skeleton-dark" height="14"
+                        width="25%" verticalAlignment="center"
+                        horizontalAlignment="left" borderRadius="5"></StackLayout>
+                    <StackLayout row="1" col="1" class="skeleton-dark" height="35"
+                        width="100%" verticalAlignment="center"
+                        horizontalAlignment="left" borderRadius="5"></StackLayout>
+                </GridLayout>
+            </FlexboxLayout>
+        </ng-template>
+    </ListView>
+</StackLayout>

@@ -1,0 +1,16 @@
+<ActionBar title="" flat="true" backgroundColor="#212B35" (tap)="toggleMenu()">
+    <Label horizontalAlignment="center" class="actionbar-title" text="Animated Menu"></Label>
+</ActionBar>
+
+<GridLayout backgroundColor="#273649">
+
+	<!-- main content -->
+    <router-outlet></router-outlet>
+
+	<!-- menu -->
+    <GridLayout #menuContainer backgroundColor="#212B35" rows="*, *, *, *, *">
+        <Label *ngFor="let item of menuItems; let i = index" [row]="i" [text]="item.name"
+            class="menu-item" [color]="item.color" (tap)="navigateToPath(item.path)"></Label>
+    </GridLayout>
+
+</GridLayout>
