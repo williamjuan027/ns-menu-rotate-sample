@@ -4,7 +4,7 @@ This app is a demonstration on how to create a rotating menu animation.
 
 ![mock ups](https://github.com/williamjuan027/ns-menu-rotate-template/blob/master/screenshots/animatedMenu.gif)
 
-Link to playground - https://play.nativescript.org/?template=play-ng&id=B8bnYx&v=33
+Link to playground - https://play.nativescript.org/?template=play-ng&id=B8bnYx&v=35
 
 ## Development
 This app is built with the NativeScript CLI. Once you have the [CLI](https://docs.nativescript.org/start/quick-setup) installed, start by cloning the repo:  
